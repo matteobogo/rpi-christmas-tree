@@ -7,7 +7,6 @@ def main(argv):
 
     def start_blinking(tree):
 
-        print("start blinking..")
         while True:
             for led in tree:
                 led.source_delay = 0.1
@@ -15,7 +14,6 @@ def main(argv):
 
     def stop_blinking(tree):
 
-        print("stop blinking..")
         tree.off()
 
     tree = LEDBoard(*range(2,28),pwm=True)
